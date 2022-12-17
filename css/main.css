@@ -990,7 +990,7 @@ body {
   border-radius: 4px;
   color: var(--title-text-color);
   border-color: transparent;
-  flex-basis: calc 13.6%;
+  flex-basis: calc((100% - 32px) / 5);
   cursor: pointer;
   transition: background-color var(--tran), color var(--tran), box-shadow var(--tran), border-radius var(--tran);
 }
