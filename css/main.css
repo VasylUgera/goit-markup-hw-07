@@ -351,11 +351,11 @@ body {
   color: var(--title-text-color);
   transition: color var(--tran);
 }
-.menu__link:hover, .menu__link:focus, .menu__link.current {
+.menu__link:hover, .menu__link:focus, .menu__link.menu__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.menu__link--current::after {
   content: "";
   position: absolute;
   display: block;
