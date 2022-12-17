@@ -18,9 +18,13 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
-    margin-right: 93px;
-        
+            
 }
+
+.header__logo{
+    margin-right: 93px;
+}
+
 
 .logo-studio {
     font-family: 'Raleway';
@@ -37,32 +41,43 @@
 
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
     /*justify-content: center;*/
 }
 
-.header-nav{ 
-    display: flex;
-    align-items: center;
+.header__nav{
     margin-right: auto;
+}
+
+.menu{ 
+    display: flex;
+    align-items: center;    
     gap: 50px;
 }
  
 
 
 
-.auth-nav {
+.authnav {
     display: flex;
     padding: 0;
     margin: 0;
     align-items: center;
     gap: 30px;
-    margin-left: auto;      
+    
+    &:hover ,
+    &:focus {
+    color: var(--accent-color);
+} 
+.header__authnav{
+    margin-left: auto;
 }
 
-.item-auth{
+}
+
+.authnav__item{
     display: flex;
     align-items: center;
 }
@@ -71,14 +86,14 @@
        
 
 
-.header-nav a,
-.auth-nav a,
-.footer .link-mail,
-.footer .link-tel {
+.menu__link,
+.authnav a,
+.footer .authnav__mail,
+.footer .authnav__tel {
     text-decoration: none;
 }
 
-.header-nav .link {
+.menu__link {
     position: relative;
     padding: 32px 0;
     font-weight: 500;
@@ -87,14 +102,12 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     transition: color var(--tran);
-}
-
-.header-nav .link:hover,
-.header-nav .link:focus,
-.header-nav .link.current {
+    &:hover,
+    &:focus,
+    &.current {
     color: var(--accent-color);    
 }
-
+}
 
 
 .current::after{
@@ -113,7 +126,7 @@
 
 
 
-.link-mail { 
+.authnav__mail { 
     display: flex;
     align-items: center;   
     font-weight: 500;
@@ -122,26 +135,22 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     transition: color var(--tran);
-    
-}
-
-.link-mail:hover,
-.link-mail:focus{
+    &:hover,
+    &:focus{
     color: var(--accent-color);
+}    
 }
 
 
-.icon-mail{
+.authnav__icon-mail {
     align-items: center;
     justify-content: center;
-}
-
-.icon-mail {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.link-tel {
+
+.authnav__tel {
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -151,22 +160,18 @@
     text-transform: uppercase;
     color: var(--primary-text-color);
     transition: color var(--tran);
+    &:hover ,
+    &:focus {
+    color: var(--accent-color);
+}
 }
 
-.icon-tel{
+.authnav__icon-tel{
     align-items: center;
     justify-content: center;
-}
-
-.icon-tel {
     margin-right: 10px;
     fill: currentColor;
 }
 
 
-
-.auth-nav .link-tel:hover ,
-.auth-nav .link-tel:focus {
-    color: var(--accent-color);
-}
     

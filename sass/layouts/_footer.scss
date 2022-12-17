@@ -66,13 +66,14 @@
     letter-spacing: 0.03em;
     color: var(--primary--white-color);
     text-decoration: none;
-    transition: color var(--tran);   
+    transition: color var(--tran);
+    &:hover,
+    &:focus{
+    color: var(--button-active-color);
+}  
 }
 
-.item-footer:hover,
-.item-footer:focus{
-    color: var(--button-active-color);
-}
+
 
 
 
@@ -85,13 +86,14 @@
     letter-spacing: 0.03em;
     text-decoration: none;  
     color: rgba(255, 255, 255, 0.6);
-    transition: color var(--tran);     
+    transition: color var(--tran);
+    &:hover,
+    &:focus{
+    color: var(--button-active-color);
+}    
 } 
 
-.link-mail-footer:hover,
-.link-mail-footer:focus{
-    color: var(--button-active-color);
-}
+
 
 
 .link-tel-footer {
@@ -103,10 +105,9 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--tran);
-    
-}
-
-.link-tel-footer:hover,
-.link-tel-footer:focus {
+    &:hover,
+    &:focus {
     color: var(--button-active-color);
 }
+}
+

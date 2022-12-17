@@ -8,19 +8,20 @@
 .item-section {
     display: block;
     flex-basis: calc((100% - 90px) / 4);
+    &::before{
+        display: block;   
+        content: "";      
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;    
+        background-repeat: no-repeat;
+        background-size: 70px 70px;
+        background-position: center;
+        margin-bottom: 30px;
+    }
 }
 
-.item-section::before{
-    display: block;   
-    content: "";      
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;    
-    background-repeat: no-repeat;
-    background-size: 70px 70px;
-    background-position: center;
-    margin-bottom: 30px;
-}
+
 
 .icon-antenna::before{
     background-image: url(../images/antenna.svg);

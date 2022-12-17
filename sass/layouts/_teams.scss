@@ -70,24 +70,26 @@
     align-items: center;
     justify-content: center;
     transition: fill var(--tran), background-color var(--tran);
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
+}
 }
 
 .teams-icon{
     fill: var(--iconka-links);
     transition: fill var(--tran);
-}
-
-.teams-icon:hover,
-.teams-icon:focus{
+    &:hover,
+    &:focus{
     fill:var(--primary--white-color);
 }
-
-.teams-link:hover,
-.teams-link:focus{
-    background-color: var(--accent-color);
-}
-
-.teams-link:hover .teams-icon,
-.teams-link:focus .teams-icon{
+    .teams-link:hover &,
+    .teams-link:focus &{
     fill:var(--primary--white-color);
 }
+}
+
+
+
+
+

@@ -24,24 +24,22 @@
     border-radius: 4px;    
     color: var(--primary--white-color);
     padding-left: 15px;
-    
+    &::placeholder {
+      font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &:hover,
+    &:focus {
+      border-color: var(--button-active-color);
   }
-
-  .signup-input::placeholder {
-    font-size: 16px;
-	line-height: 1.25;
-	letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &:focus {
+      outline: var(--button-active-color);
   }
-
-.signup-input:hover,
-.signup-input:focus {
-    border-color: var(--button-active-color);
 }
 
-.signup-input:focus {
-    outline: var(--button-active-color);
-}
+  
 
 
 .signup-button {
@@ -64,14 +62,15 @@
     letter-spacing: 0.06em;
     color: var(--primary--white-color);
     transition: background-color var(--tran);
-  }
-
-
-  .signup-button:hover,
-  .signup-button:focus {   
+    &:hover,
+    &:focus {   
      background-color: var(--button-active-color);
   }
 
+  }
+
+
+  
 .sign-icon {
     margin-left: 10px;    
     width: 24px;
