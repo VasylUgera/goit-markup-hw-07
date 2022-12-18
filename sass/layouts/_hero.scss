@@ -1,5 +1,5 @@
 .hero {
-    max-width: 1600px;
+    width: 100%;
     background-size: cover;
     margin: 0 auto;
     background-color: #2F303A;
@@ -20,17 +20,24 @@
 
 }
 
-.hero-title{    
-    width: 693px;
+.hero-title{      
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636;
+    font-size: 26px;
+    line-height: 1.6153;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     align-items: center; 
     color: #FFFFFF;    
     margin:0 auto;
     margin-bottom:  30px;
+    @media screen and (min-width: 768px){
+        width: 360px;
+    }   
+    @media screen and (min-width: 1200px){ 
+        width: 696px;       
+        font-size: 44px;
+        line-height: 1.3636;
+    }
 }
 
 

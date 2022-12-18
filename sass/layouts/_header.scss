@@ -104,13 +104,13 @@
     transition: color var(--tran);
     &:hover,
     &:focus,
-    &.menu__link--current {
+    &.menu__link-current {
     color: var(--accent-color);    
 }
 }
 
 
-.menu__link--current::after{
+.menu__link-current::after{
     content:'';
     position: absolute;
     display: block;

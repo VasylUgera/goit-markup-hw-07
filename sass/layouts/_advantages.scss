@@ -1,13 +1,8 @@
-.list-section {
-    display: flex;
-    align-items: start;
-    gap: 30px;
-}
+
 
 
 .item-section {
-    display: block;
-    flex-basis: calc((100% - 90px) / 4);
+    display: block;    
     &::before{
         display: block;   
         content: "";      
@@ -19,6 +14,20 @@
         background-position: center;
         margin-bottom: 30px;
     }
+}
+
+
+.list-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 30px;
+    @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 60px) / 2);
+        }
+    @media screen and (min-width: 1200px){
+    flex-basis: calc((100% - 90px) / 4);
+    }    
 }
 
 
